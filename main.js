@@ -21,9 +21,13 @@ var init = document.querySelector('input[name="coders_initials"]:checked').value
 // var codesource = document.querySelector('input[name="codesource"]:checked').value;
 
 let finalSign = ("coded " + date + " " + selectedItems + " " + init);
-
+// somehow add - "/" to remove / from end
 document.getElementById("signPrint").innerHTML = finalSign;
 
 
 }
 
+// if(selectedItems.endsWith("/")){
+//     selectedItems = selectedItems - "/";
+// }
+// return selectedItems;
