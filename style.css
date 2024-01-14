@@ -1,0 +1,7 @@
+*{font-family:  Consolas,monaco,monospace; 
+background-color: rgb(56, 56, 56);
+color: rgb(128, 128, 128);}
+
+button{background-color: rgb(44, 44, 44);}
+
+input[type="checkbox"],[type="radio"]{accent-color: green;}
