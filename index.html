@@ -1,38 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>How Code</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div>
     <h1>test</h1>
-    <p>my coding sign of test</p>
-<form action="">
+    <p>Coding Sign Off Script</p>
+    <form action="">
+      <div class="codername"> <!-- Coders Initials -->
+        <input type="radio" id="signInit" name="coders_initials" value="JC" />
+        <label for="JC">JC</label><br />
+        <input type="radio" id="signInit" name="coders_initials" value="JRM" />
+        <label for="JRM">JRM</label><br />
+        <input type="radio" id="signInit" name="coders_initials" value="LN" />
+        <label for="LN">LN</label><br />
+      </div>
 
-<div class="codername">
-<input type="radio" id="signInit" name="coders_initials" value="JC">
-<label for="JC">JC</label><br>
-<input type="radio" id="signInit" name="coders_initials" value="JRM">
-<label for="JRM">JRM</label><br>
-<input type="radio" id="signInit" name="coders_initials" value="LN">
-<label for="LN">LN</label><br>
-</div>
+      <div class="codesource"><!-- Code Source Checkbox -->
+        <input type="checkbox" id="harris" name="codesource" value="H" />
+        <label for="harris">Harris</label><br />
+        <input type="checkbox" id="evolve" name="codesource" value="E" />
+        <label for="evolve">Evolve</label><br />
+        <input type="checkbox" id="lpres" name="codesource" value="LPRES" />
+        <label for="lpres">LPRES</label><br />
+      </div>
+      <div class="codesource"><!-- Duplicate Box -->
+        <input type="checkbox" id="dupe" name="codesource" value="DUPE" />
+        <label for="dupe">DUPE</label><br />
+      </div>
 
-<div class="codesource">
-<input type="checkbox" id="harris" name="codesource" value="H">
-<label for="harris">Harris</label><br>
-<input type="checkbox" id="evolve" name="codesource" value="E">
-<label for="evolve">Evolve</label><br>
-<input type="checkbox" id="lpres" name="codesource" value="LPRES">
-<label for="lpres">LPRES</label><br>
-</div>
-    <button type="button" onclick="codingSignOff()">Code</button>
-
-</form>
-
-<h2 id="signPrint"></h2>
-</body>
-<script src="main.js"></script>
+      <div><!--  -->
+      <button type="button" onclick="codingSignOff()" id="codeCombine">Code</button>
+      <p id="signPrint"></p>
+    </div>
+    </form>
+  </body>
+  <script src="main.js"></script>
 </html>
