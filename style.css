@@ -1,8 +1,8 @@
 * {
   font-family: Consolas, monaco, monospace;
-  background-color: rgb(56, 56, 56);
   color: rgb(128, 128, 128);
 }
+body{  background-color: rgb(56, 56, 56);}
 
 button {
   background-color: rgb(44, 44, 44);
@@ -12,3 +12,8 @@ input[type="checkbox"],
 [type="radio"] {
   accent-color: green;
 }
+
+input[type="text"]{background-color: rgb(56, 56, 56);}
+
+#ifOther{visibility:hidden;
+background-color: rgb(71, 71, 71);}

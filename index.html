@@ -12,18 +12,20 @@
     <p>Coding Sign Off Script</p>
     <form action="">
       <div class="codername"> <!-- Coders Initials -->
-        <input type="radio" id="signInit" name="coders_initials" value="JC" />
+        <input type="radio" id="preset" onclick="otherCheck()" checked name="coders_initials" value="JC" />
         <label for="JC">JC</label><br />
-        <input type="radio" id="signInit" name="coders_initials" value="JRM" />
+        <input type="radio" id="preset" onclick="otherCheck()" name="coders_initials" value="JRM" />
         <label for="JRM">JRM</label><br />
-        <input type="radio" id="signInit" name="coders_initials" value="LN" />
+        <input type="radio" id="preset" onclick="otherCheck()" name="coders_initials" value="LN" />
         <label for="LN">LN</label><br />
-      </div>
+        <input type="radio" id="Other" onclick="otherCheck()" name="coders_initials" />
+        <label for="Other">Other</label>
+        <input type='text' id='ifOther' name='Other'>
 
       <div class="codesource"><!-- Code Source Checkbox -->
-        <input type="checkbox" id="harris" name="codesource" value="H" />
+        <input type="checkbox" id="harris" name="codesource" checked value="H" />
         <label for="harris">Harris</label><br />
-        <input type="checkbox" id="evolve" name="codesource" value="E" />
+        <input type="checkbox" id="evolve" name="codesource" checked value="E" />
         <label for="evolve">Evolve</label><br />
         <input type="checkbox" id="lpres" name="codesource" value="LPRES" />
         <label for="lpres">LPRES</label><br />

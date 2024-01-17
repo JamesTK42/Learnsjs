@@ -2,6 +2,14 @@
 let today = new Date();
 let date = today.getDate() + "/" + (today.getMonth() + 1);
 
+function otherCheck() {
+  if (document.getElementById('Other').checked) {
+      document.getElementById('ifOther').style.visibility = 'visible';
+  }
+  else document.getElementById('ifOther').style.visibility = 'hidden';
+
+
+}
 // Print the message and the date
 function codingSignOff() {
   var items = document.getElementsByName("codesource");
@@ -11,6 +19,7 @@ function codingSignOff() {
       selectedItems += items[i].value + "/";
   }
 
+  
   cdenm = selectedItems.slice(0, -1);
 
   var init = document.querySelector(
@@ -24,4 +33,5 @@ function codingSignOff() {
   navigator.clipboard.writeText(finalSign);
   alert("coppied to clipboard")
 }
+
 
