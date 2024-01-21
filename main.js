@@ -2,6 +2,7 @@
 let today = new Date();
 let date = today.getDate() + "/" + (today.getMonth() + 1);
 
+// If other (radio) selected, hide/make visible input text
 function otherCheck() {
   if (document.getElementById('Other').checked) {
       document.getElementById('ifOther').style.visibility = 'visible';
@@ -10,7 +11,8 @@ function otherCheck() {
 
 
 }
-// Print the message and the date
+
+
 function codingSignOff() {
   var items = document.getElementsByName("codesource");
   var selectedItems = "";
@@ -22,16 +24,24 @@ function codingSignOff() {
   
   cdenm = selectedItems.slice(0, -1);
 
-  var init = document.querySelector(
-    'input[name="coders_initials"]:checked'
-  ).value;
+  // var init = document.querySelector(
+  //   'input[name="coders_initials"]:checked'
+  // ).value;
 
+    if (document.getElementById('Other').checked){
+      var init = document.getElementById("ifOther").value;
+    }
+    else{var init = document.querySelector(
+      'input[name="coders_initials"]:checked'
+    ).value;}
   let finalSign = "coded " + date + " " + cdenm + " " + init;
-  // somehow add - "/" to remove / from end
-  document.getElementById("signPrint").innerHTML = finalSign;
 
+  // Prints coding sign off to html
+  // document.getElementById("signPrint").innerHTML = finalSign;
+
+  // copy result to clipboard
   navigator.clipboard.writeText(finalSign);
-  alert("coppied to clipboard")
-}
+  // alert("coppied to clipboard")
 
+}
 
