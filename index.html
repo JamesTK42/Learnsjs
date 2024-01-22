@@ -9,30 +9,38 @@
   <body>
     <div>
     <h1>test</h1>
+    <div class="signform">
     <p>Coding Sign Off Script</p>
     <form action="">
       <div class="codername"> <!-- Coders Initials -->
         <input type="radio" id="preset" onclick="otherCheck()" checked name="coders_initials" value="JC" />
-        <label for="JC">JC</label><br />
+        <label for="JC">JC</label>
+        <!-- <br /> -->
         <input type="radio" id="preset" onclick="otherCheck()" name="coders_initials" value="JRM" />
-        <label for="JRM">JRM</label><br />
+        <label for="JRM">JRM</label>
+        <!-- <br /> -->
         <input type="radio" id="preset" onclick="otherCheck()" name="coders_initials" value="LN" />
-        <label for="LN">LN</label><br />
+        <label for="LN">LN</label>
+        <!-- <br /> -->
         <input type="radio" id="Other" onclick="otherCheck()" name="coders_initials" />
         <label for="Other">Other</label>
         <input type='text' id='ifOther' name='Other'>
 
       <div class="codesource"><!-- Code Source Checkbox -->
         <input type="checkbox" id="harris" name="codesource" checked value="H" />
-        <label for="harris">Harris</label><br />
+        <label for="harris">Harris</label>
+        <!-- <br /> -->
         <input type="checkbox" id="evolve" name="codesource" checked value="E" />
-        <label for="evolve">Evolve</label><br />
+        <label for="evolve">Evolve</label>
+        <!-- <br /> -->
         <input type="checkbox" id="lpres" name="codesource" value="LPRES" />
-        <label for="lpres">LPRES</label><br />
+        <label for="lpres">LPRES</label>
+        <!-- <br /> -->
       </div>
-      <div class="codesource"><!-- Duplicate Box -->
-        <input type="checkbox" id="dupe" name="codesource" value="DUPE" />
-        <label for="dupe">DUPE</label><br />
+      <div class="dupe"><!-- Duplicate Box -->
+        <input type="checkbox" id="dupe" name="duplicate" value="DUPE" />
+        <label for="dupe">DUPE</label>
+        <!-- <br /> -->
       </div>
 
       <div><!--  -->
@@ -40,6 +48,8 @@
       <p id="signPrint"></p>
     </div>
     </form>
+  </div>
+
   </body>
   <script src="main.js"></script>
 </html>

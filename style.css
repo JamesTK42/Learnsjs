@@ -17,3 +17,8 @@ input[type="text"]{background-color: rgb(56, 56, 56);}
 
 #ifOther{visibility:hidden;
 background-color: rgb(71, 71, 71);}
+
+.signform{
+  background-color: rgb(44, 44, 44);
+  width: 30rem;
+}
