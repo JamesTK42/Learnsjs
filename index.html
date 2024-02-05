@@ -1,55 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>How Code</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>How Code</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div>
     <h1>test</h1>
     <div class="signform">
-    <p>Coding Sign Off Script</p>
-    <form action="">
-      <div class="codername"> <!-- Coders Initials -->
-        <input type="radio" id="preset" onclick="otherCheck()" checked name="coders_initials" value="JC" />
-        <label for="JC">JC</label>
-        <!-- <br /> -->
-        <input type="radio" id="preset" onclick="otherCheck()" name="coders_initials" value="JRM" />
-        <label for="JRM">JRM</label>
-        <!-- <br /> -->
-        <input type="radio" id="preset" onclick="otherCheck()" name="coders_initials" value="LN" />
-        <label for="LN">LN</label>
-        <!-- <br /> -->
-        <input type="radio" id="Other" onclick="otherCheck()" name="coders_initials" />
-        <label for="Other">Other</label>
-        <input type='text' id='ifOther' name='Other'>
+      <h2>Coding Sign Off Script</h2>
+      <form id="codingform" action="">
+        <button type=submit onclick="return false;" style="display:none;"></button>
+        <div class="codername"> <!-- Coders Initials -->
+          <input type="radio" id="preset" onclick="otherCheck()" checked name="coders_initials" value="JC" />
+          <label for="JC">JC</label>
+          <!-- <br /> -->
+          <input type="radio" id="preset" onclick="otherCheck()" name="coders_initials" value="JRM" />
+          <label for="JRM">JRM</label>
+          <!-- <br /> -->
+          <input type="radio" id="preset" onclick="otherCheck()" name="coders_initials" value="LN" />
+          <label for="LN">LN</label>
+          <!-- <br /> -->
+          <input type="radio" id="Other" onclick="otherCheck()" name="coders_initials" />
+          <label for="Other">Other</label>
+          <input type='text' id='ifOther' maxlength="5"placeholder="Initials">
 
-      <div class="codesource"><!-- Code Source Checkbox -->
-        <input type="checkbox" id="harris" name="codesource" checked value="H" />
-        <label for="harris">Harris</label>
-        <!-- <br /> -->
-        <input type="checkbox" id="evolve" name="codesource" checked value="E" />
-        <label for="evolve">Evolve</label>
-        <!-- <br /> -->
-        <input type="checkbox" id="lpres" name="codesource" value="LPRES" />
-        <label for="lpres">LPRES</label>
-        <!-- <br /> -->
+          <div class="codesource"><!-- Code Source Checkbox -->
+            <input type="checkbox" id="harris" name="codesource" checked value="H" />
+            <label for="harris">Harris</label>
+            <!-- <br /> -->
+            <input type="checkbox" id="evolve" name="codesource" checked value="E" />
+            <label for="evolve">Evolve</label>
+            <!-- <br /> -->
+            <input type="checkbox" id="lpres" name="codesource" value="LPRES" />
+            <label for="lpres">LPRES</label>
+            <!-- <br /> -->
+          </div>
+          <div class="dupe"><!-- Duplicate Box -->
+            <input type="checkbox" id="dupe" name="duplicate" value="DUPE" />
+            <label for="dupe">DUPE</label>
+            <!-- <br /> -->
+          </div>
+      </form>
+      <div class="twotogether">
+        <div class="codestring"><!--  -->
+          <button type="button" onclick="codingSignOff()" id="codeCombine">Code</button>
+        </div>
+        <div class="printinit">
+          <p id="signPrint">test</p>
+        </div>
       </div>
-      <div class="dupe"><!-- Duplicate Box -->
-        <input type="checkbox" id="dupe" name="duplicate" value="DUPE" />
-        <label for="dupe">DUPE</label>
-        <!-- <br /> -->
-      </div>
-
-      <div><!--  -->
-      <button type="button" onclick="codingSignOff()" id="codeCombine">Code</button>
-      <p id="signPrint"></p>
     </div>
-    </form>
-  </div>
 
-  </body>
-  <script src="main.js"></script>
+</body>
+<script src="main.js"></script>
+
 </html>
